@@ -28,7 +28,7 @@ public class Board {
             }
             builder.append("\n");
         }
-        return builder.toString();
+        return builder.toString()
     }
 
     public void setTileValue(int value, int row, int column) {
