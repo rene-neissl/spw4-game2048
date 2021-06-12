@@ -32,4 +32,11 @@ jobs:
     steps:
       - name: Run Game
         run: mvn tomcat7:run
+  stop-server:
+    name: Stop Server
+    runs-on: [self-hosted, linux]
+    needs: deploy
+    steps:
+      - name: Stop Game
+        run: mvn tomcat7:shutdown
   
