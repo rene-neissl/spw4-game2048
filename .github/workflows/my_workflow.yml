@@ -30,12 +30,6 @@ jobs:
     runs-on: [self-hosted, linux]
     needs: package
     steps:
-      - name: Remove container
-        run: docker rm --force tomcat
-      - name: Remove image
-        run: docker image rm --force game2048
-      - name: Create container
-        run: echo -e 'FROM tomcat:9.0.46-jdk11 \n COPY ./target/game2048.war /usr/local/tomcat/webapps' | docker build -t game2048 -f- .
-      - name: Run container
-        run: docker run --rm -d --name tomcat -p 8080:8080 game2048
+      - name: Run Game
+        run: mvn tomcat7:run
   
