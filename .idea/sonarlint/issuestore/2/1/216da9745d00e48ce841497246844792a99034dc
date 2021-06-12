@@ -1,0 +1,33 @@
+
+o
+java:S1192_"TDefine a constant instead of duplicating this literal "            </div>
+" 7 times.(ŸÒªÜúÿÿÿÿ
+¥
+java:S1192…"ˆDefine a constant instead of duplicating this literal "                            <div class=\"col mt-1 ml-1 mb-1 bg-light\">" 3 times.(õÔ´×úÿÿÿÿ
+|
+java:S1192\"aDefine a constant instead of duplicating this literal "            <div class=\"row\">
+" 7 times.(Ôï¾²şÿÿÿÿ
+ˆ
+java:S1192j"mDefine a constant instead of duplicating this literal "                <div class=\"col-2\"></div>
+" 4 times.(ë¥¬ßúÿÿÿÿ
+f
+java:S1989"PHandle the following exception that could be thrown by "getWriter": IOException.(×–·›
+š
+java:S1192s"ƒDefine a constant instead of duplicating this literal "                            <div class=\"col mt-1 ml-1 bg-light\">" 9 times.(¨àŞÆ
+ˆ
+java:S1192r"mDefine a constant instead of duplicating this literal "                        <div class=\"row\">
+" 4 times.(Ôï¾²şÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÚÎĞ¿
+
+java:S1192v"ˆDefine a constant instead of duplicating this literal "                            <div class=\"col mt-1 ml-1 mr-1 bg-light\">" 3 times.(ÍëÒ,
+@
+java:S1181E"%Catch Exception instead of Throwable.(’ğôãøÿÿÿÿ
+<	java:S131/""Add a default case to this switch.(ë´åİşÿÿÿÿ
+{
+java:S1192w"`Define a constant instead of duplicating this literal "                        </div>
+" 4 times.(ŸÒªÜúÿÿÿÿ
+_
+java:S1192s"IDefine a constant instead of duplicating this literal "</div>
+" 16 times.(¨àŞÆ
+u
+java:S1149K"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(í…Ò‰
