@@ -22,8 +22,8 @@ jobs:
       name: Package Application
       run: mvn package
       uses: actions/upload-artifact@v2
-        with:
-          path: "target/*.war"
+      with:
+        path: "target/*.war"
   deploy:
     name: Deploy
     runs-on: [self-hosted, linux]
