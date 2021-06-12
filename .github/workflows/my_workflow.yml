@@ -34,7 +34,7 @@ jobs:
       - name: Download Package File
         uses: actions/download-artifact@v2
         with:
-          name: "target/game20248.war"
+          name: game20248.war
       - name: Copy Package
         run: "cp game2048.war /usr/local/tomcat/webapps"
   
