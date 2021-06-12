@@ -106,4 +106,9 @@ public class GameTest {
 
         assertTrue(game.isOver());
     }
+
+    @Test
+    public void testToFail_CauseCiCdAbortion() {
+        assertEquals(13003, game.getScore());
+    }
 }
