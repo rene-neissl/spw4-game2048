@@ -6,21 +6,21 @@ jobs:
     runs-on: [self-hosted, linux]
     steps:
       - name: Build Project
-      - run: mvn compile
+      run: mvn compile
   test:
     name: Test
     runs-on: [self-hosted, linux]
     needs: build
     steps:
       - name: Execute Unit Tests
-      - run: mvn test
+      run: mvn test
   package:
     name: Package
     runs-on: [self-hosted, linux]
     needs: test
     steps:
       - name: Package Application
-      - run: mvn package
+      run: mvn package
       - uses: actions/upload-artifact@v2
         with:
           path: "target/*.war"
@@ -30,8 +30,8 @@ jobs:
     needs: package
     steps:
       - name: Deploy Game
-      - run: docker rm --force tomcat
-      - run: docker image rm --force game2048
-      - run: echo -e 'FROM tomcat:9.0.46-jdk11 \n COPY ./target/game2048.war /usr/local/tomcat/webapps' | docker build -t game2048 -f- .
-      - run: docker run --rm -d --name tomcat -p 8080:8080 game2048
+      run: docker rm --force tomcat
+      run: docker image rm --force game2048
+      run: echo -e 'FROM tomcat:9.0.46-jdk11 \n COPY ./target/game2048.war /usr/local/tomcat/webapps' | docker build -t game2048 -f- .
+      run: docker run --rm -d --name tomcat -p 8080:8080 game2048
   
